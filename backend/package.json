@@ -1,0 +1,22 @@
+{
+  "name": "dara-ai-docs-api-backend-server",
+  "type": "module",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Node backend for proxying Google Cloud API requests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env.local server.js",
+    "dev": "nodemon --env-file=.env.local server.js"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "google-auth-library": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "nodemon": "latest"
+  }
+}

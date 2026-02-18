@@ -1,20 +1,28 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Dara by SAGENT — AI Docs Platform
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Unified mortgage servicing document management platform with three integrated services:
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+- **AI Docs** — Batch upload, Pyro AI document classification/extraction, document viewer, processing reports, file index templates
+- **Advanced Recon** — Corporate advance reconciliation, invoice-to-ledger matching, AI-assisted CSV mapping
+- **Doc Audit** — Loan tape vs. document comparison, SOT version management, field-level accept/flag/override
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Prerequisites
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- **Node.js** (v18+) and **npm**
+
+## Installation & Running
+
+```bash
+npm install && npm run dev
+```
+
+This starts both the backend proxy and the Vite frontend dev server.
+
+## Project Structure
+
+- `frontend/` — React 18 + TypeScript + Vite application
+- `frontend/components/` — All UI components organized by service
+- `frontend/types.ts` — Shared TypeScript type definitions
+- `frontend/constants.ts` — Mock data for all services
+- `frontend/docs/Gaps.md` — Feature gap spec & implementation tracker
+- `backend/` — Node.js/Express proxy for Google Cloud API calls
